@@ -17,7 +17,7 @@ function createCartModel(config) {
 		var idx;
 		var totalPrice = 0;
 		// loops through the items in the cart
-		for (var idx = 0; idx < this.items.length; idx++) {
+		for (idx = 0; idx < this.items.length; idx++) {
 			totalPrice += this.items[idx].price;
 		}
 		return totalPrice.toFixed(2);
